@@ -1,24 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? família= Poppins:wght@300;500 & display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .container {
+            display: block;
+            background-color: white;
+        }
+
+        .title {
+            padding: 25px;
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 100px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .textContent {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 50px;
+        }
+
+        .mainButton {
+            background: none;
+            background-color: #73fed8;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 6px;
+            box-shadow: -7px 5px 10px #00000073;
+            text-transform: uppercase;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            transition: 1s;
+            background:linear-gradient(90deg, rgba(247,247,247,1) 26%, rgba(2,0,36,1) 100%);
+        }
+
+        /* :hover ====> QUANDO O MOUSE PASSAR POR CIMA VAI ADICIONAR ESSE CSS */
+        .mainButton:hover {
+            background-color: red;
+        }
+
+        .containerButton {
+            text-align: center;
+        }
+
+    </style>
+
+    <script>
+
+        function funcDoBotao() {
+            console.info('MANO, VOCÊ CLICOU NO BOTÃO')
+            alert('MANO ESSE É UM ALERTA DO JAVASXRIPT')
+
+            var num0 = 0
+            let num1 = 1
+            const num2 = 2
+
+            num0 = num1 + num2 + 1000
+            num1 = num1 + 90 + 100
+
+            console.info('var pode mudar de valor', num0)
+            console.info('let também pode mudar de valor', num1)
+            console.info('const é uma constante, logo seu valor não pode mudar', num2)
+        }
+
+
+
+        function mudarValor() {
+            // FAÇA UMA FUNCÇÃO QUE SOME + 10 A CADA CLIQUE DO BOTÃO
+        }
+
+
+    </script>
+
     <title>velha-game</title>
 </head>
 <body>
 
-    <div>
-        <h1>BEM VINDO AO VELHA ! &#x1F47D 🤪🎮🕹 </h1>
-        <p>Criamos esse projeto inspirado no famoso "Jogo da velha", espero que gostem e aproveitem!</p>
-        <button>Clique aqui</button>
+    <div class="container">
+        <h1 class="title">BEM VINDO AO VELHA ! &#x1F47D🤪🎮🕹 </h1>
+        <p class="textContent">Criamos esse projeto inspirado no famoso "Jogo da velha", espero que gostem e aproveitem!</p>
+        <div class="containerButton">
+            <button class="mainButton" onclick="funcDoBotao()">Clique aqui</button>
+        </div>
     </div>
 
-    <h1> KKKKKKKKKKOOOOOOOOOOOOOOOEEEEEEEEEEEEEEEE </h1>
-
     <script>
-        var nome = window.prompt('Qual é o seu nome ?')
-        window.alert('Seja Bem Vindo ao Velha Game ,' + nome + ' Aproveite!')
+        // var nome = window.prompt('Qual é o seu nome ?')
+        // window.alert('Seja Bem Vindo ao Velha Game ,' + nome + ' Aproveite!')
     </script>
 
 </body>
